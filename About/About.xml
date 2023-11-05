@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Bionics</name>
+	<author>IIoTpoIIIuTeJIb</author>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+	<url></url>
+	<description>.</description>
+	<packageId>IIoTpoIIIuTeJIb.Bionics</packageId>
+</ModMetaData>

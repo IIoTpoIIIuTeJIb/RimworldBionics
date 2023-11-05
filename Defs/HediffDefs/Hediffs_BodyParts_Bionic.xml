@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Bionic lung -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicLung</defName>
+    <label>bionic lung</label>
+    <labelNoun>a bionic lung</labelNoun>
+    <description>An installed bionic lung.</description>
+    <descriptionHyperlinks><ThingDef>BionicLung</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicLung</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicLung</defName>
+    <label>bionic lung</label>
+    <description>An advanced artificial lung. It is better than a biological lung in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicHeart</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicLung</defName>
+    <label>install bionic lung</label>
+    <description>Install a bionic lung.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicLung</ThingDef>
+      <HediffDef>BionicLung</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic lung.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicLung</addsHediff>
+  </RecipeDef>
+
+  <!-- Bionic liver -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicLiver</defName>
+    <label>bionic liver</label>
+    <labelNoun>a bionic liver</labelNoun>
+    <description>An installed bionic liver.</description>
+    <descriptionHyperlinks><ThingDef>BionicLiver</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicLiver</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicLiver</defName>
+    <label>bionic liver</label>
+    <description>An advanced artificial liver. It is better than a biological liver in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicHeart</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicLiver</defName>
+    <label>install bionic liver</label>
+    <description>Install a bionic liver.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicLiver</ThingDef>
+      <HediffDef>BionicLiver</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic liver.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicLiver</addsHediff>
+  </RecipeDef>
+
+  <!-- Bionic kidney -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>BionicKidney</defName>
+    <label>bionic kidney</label>
+    <labelNoun>a bionic kidney</labelNoun>
+    <description>An installed bionic kidney.</description>
+    <descriptionHyperlinks><ThingDef>BionicKidney</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>BionicKidney</spawnThingOnRemoved>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.25</partEfficiency>
+      <betterThanNatural>true</betterThanNatural>
+    </addedPartProps>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>BionicKidney</defName>
+    <label>bionic kidney</label>
+    <description>An advanced artificial kidney. It is better than a biological kidney in almost every way.</description>
+    <descriptionHyperlinks><RecipeDef>InstallBionicHeart</RecipeDef></descriptionHyperlinks>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+    <defName>InstallBionicKidney</defName>
+    <label>install bionic kidney</label>
+    <description>Install a bionic kidney.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BionicKidney</ThingDef>
+      <HediffDef>BionicKidney</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing bionic kidney.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BionicKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>BionicKidney</addsHediff>
+  </RecipeDef>
+  
+  <!-- Will supressor implant WIP -->
+  
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Mindscrew</defName>
+    <label>mindscrew</label>
+    <labelNoun>a mindscrew</labelNoun>
+    <description>An installed mindscrew.</description>
+    <descriptionHyperlinks><ThingDef>Mindscrew</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Mindscrew</spawnThingOnRemoved>
+    <priceOffset>-110</priceOffset>
+    <stages>
+      <li>
+        <painOffset>0.2</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticImperialBase">
+    <defName>Mindscrew</defName>
+    <label>mindscrew</label>
+    <description>Inflicts continuous pain on the user. Mindscrews are used by some authorities as a long-term punishment. Some even install them voluntarily as a demonstration of ideological or religious devotion.</description>
+    <descriptionHyperlinks><RecipeDef>InstallMindscrew</RecipeDef></descriptionHyperlinks>
+    <techHediffsTags>
+      <li>PainCauser</li>
+    </techHediffsTags>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>15</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>BrainWiring</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallMindscrew</defName>
+    <label>install mindscrew</label>
+    <description>Install a mindscrew.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Mindscrew</ThingDef>
+      <HediffDef>Mindscrew</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing mindscrew.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Mindscrew</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Mindscrew</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Mindscrew</addsHediff>
+  </RecipeDef>
+  
+  <!-- Multitool arm WIP -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>MultitoolArm</defName>
+    <label>multitool arm</label>
+    <labelNoun>a multitool arm</labelNoun>
+    <description>An installed multitool arm.</description>
+    <descriptionHyperlinks><ThingDef>MultitoolArm</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.08</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>knuckle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_FieldHand</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_FieldHand</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>DrillArm</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticImperialBase">
+    <defName>DrillArm</defName>
+    <label>drill arm</label>
+    <description>A mechanical arm replacement for speeding up mining. It has a built-in snake drill, which allows the miner to rapidly find and exploit weak lines in the rock. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
+    <descriptionHyperlinks><RecipeDef>InstallDrillArm</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+    </recipeMaker>
+    <techHediffsTags>
+      <li>DrillArm</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallDrillArm</defName>
+    <label>install drill arm</label>
+    <description>Install a drill arm.</description>
+    <descriptionHyperlinks>
+      <ThingDef>DrillArm</ThingDef>
+      <HediffDef>DrillArm</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing drill arm.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DrillArm</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DrillArm</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Arm</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>DrillArm</addsHediff>
+  </RecipeDef>
+  
+  <!-- Surgical hand WIP -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>FieldHand</defName>
+    <label>field hand</label>
+    <labelNoun>a field hand</labelNoun>
+    <description>An installed field hand.</description>
+    <descriptionHyperlinks><ThingDef>FieldHand</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+    <stages>
+      <li>
+        <statOffsets>
+          <PlantWorkSpeed>1.60</PlantWorkSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.08</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>knuckle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_FieldHand</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_FieldHand</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>FieldHand</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartProstheticImperialBase">
+    <defName>FieldHand</defName>
+    <label>field hand</label>
+    <description>This mechanical hand replacement is made to speed up the sowing and harvesting tasks of a farmer. Multiple telescoping finger-like protrusions can simultaneously harvest from several points on the same plant, or precisely sow several holes at once. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
+    <descriptionHyperlinks><RecipeDef>InstallFieldHand</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
+    </recipeMaker>
+    <techHediffsTags>
+      <li>FieldHand</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+    <defName>InstallFieldHand</defName>
+    <label>install field hand</label>
+    <description>Install a field hand.</description>
+    <descriptionHyperlinks>
+      <ThingDef>FieldHand</ThingDef>
+      <HediffDef>FieldHand</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing field hand.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FieldHand</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FieldHand</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>FieldHand</addsHediff>
+  </RecipeDef>
+
+</Defs>
