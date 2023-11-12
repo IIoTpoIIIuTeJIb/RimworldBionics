@@ -21,7 +21,7 @@
     <defName>BionicLung</defName>
     <label>bionic lung</label>
     <description>An advanced artificial lung. It is better than a biological lung in almost every way.</description>
-    <descriptionHyperlinks><RecipeDef>InstallBionicHeart</RecipeDef></descriptionHyperlinks>
+    <descriptionHyperlinks><RecipeDef>InstallBionicLung</RecipeDef></descriptionHyperlinks>
     <costList>
       <Plasteel>15</Plasteel>
       <ComponentSpacer>4</ComponentSpacer>
@@ -171,87 +171,24 @@
     </appliedOnFixedBodyParts>
     <addsHediff>BionicKidney</addsHediff>
   </RecipeDef>
-  
-  <!-- Will supressor implant WIP -->
-  
-  <HediffDef ParentName="ImplantHediffBase">
-    <defName>Mindscrew</defName>
-    <label>mindscrew</label>
-    <labelNoun>a mindscrew</labelNoun>
-    <description>An installed mindscrew.</description>
-    <descriptionHyperlinks><ThingDef>Mindscrew</ThingDef></descriptionHyperlinks>
-    <spawnThingOnRemoved>Mindscrew</spawnThingOnRemoved>
-    <priceOffset>-110</priceOffset>
-    <stages>
-      <li>
-        <painOffset>0.2</painOffset>
-      </li>
-    </stages>
-  </HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticImperialBase">
-    <defName>Mindscrew</defName>
-    <label>mindscrew</label>
-    <description>Inflicts continuous pain on the user. Mindscrews are used by some authorities as a long-term punishment. Some even install them voluntarily as a demonstration of ideological or religious devotion.</description>
-    <descriptionHyperlinks><RecipeDef>InstallMindscrew</RecipeDef></descriptionHyperlinks>
-    <techHediffsTags>
-      <li>PainCauser</li>
-    </techHediffsTags>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
-    <costList>
-      <Steel>15</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <researchPrerequisite>BrainWiring</researchPrerequisite>
-    </recipeMaker>
-  </ThingDef>
-
-  <RecipeDef ParentName="SurgeryInstallImplantBase">
-    <defName>InstallMindscrew</defName>
-    <label>install mindscrew</label>
-    <description>Install a mindscrew.</description>
-    <descriptionHyperlinks>
-      <ThingDef>Mindscrew</ThingDef>
-      <HediffDef>Mindscrew</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing mindscrew.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Mindscrew</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Mindscrew</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Brain</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>Mindscrew</addsHediff>
-  </RecipeDef>
-  
-  <!-- Multitool arm WIP -->
+  <!-- Surgeon hand -->
 
   <HediffDef ParentName="AddedBodyPartBase">
-    <defName>MultitoolArm</defName>
-    <label>multitool arm</label>
-    <labelNoun>a multitool arm</labelNoun>
-    <description>An installed multitool arm.</description>
-    <descriptionHyperlinks><ThingDef>MultitoolArm</ThingDef></descriptionHyperlinks>
+    <defName>SurgeonHand</defName>
+    <label>surgeon hand</label>
+    <labelNoun>a surgeon hand</labelNoun>
+    <description>An installed surgeon hand.</description>
+    <descriptionHyperlinks><ThingDef>SurgeonHand</ThingDef></descriptionHyperlinks>
     <addedPartProps>
       <solid>true</solid>
     </addedPartProps>
     <stages>
       <li>
         <statOffsets>
-          <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+          <MedicalTendSpeed>0.10</MedicalTendSpeed>
+          <MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
+          <MedicalOperationSpeed>0.10</MedicalOperationSpeed>
         </statOffsets>
         <capMods>
           <li>
@@ -277,95 +214,19 @@
           </li>
         </tools>
       </li>
-    </comps>
-    <spawnThingOnRemoved>DrillArm</spawnThingOnRemoved>
-  </HediffDef>
-
-  <ThingDef ParentName="BodyPartProstheticImperialBase">
-    <defName>DrillArm</defName>
-    <label>drill arm</label>
-    <description>A mechanical arm replacement for speeding up mining. It has a built-in snake drill, which allows the miner to rapidly find and exploit weak lines in the rock. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
-    <descriptionHyperlinks><RecipeDef>InstallDrillArm</RecipeDef></descriptionHyperlinks>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
-    <costList>
-      <Steel>60</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-    </costList>
-    <recipeMaker>
-      <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
-    </recipeMaker>
-    <techHediffsTags>
-      <li>DrillArm</li>
-    </techHediffsTags>
-  </ThingDef>
-
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallDrillArm</defName>
-    <label>install drill arm</label>
-    <description>Install a drill arm.</description>
-    <descriptionHyperlinks>
-      <ThingDef>DrillArm</ThingDef>
-      <HediffDef>DrillArm</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing drill arm.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>DrillArm</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>DrillArm</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Arm</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>DrillArm</addsHediff>
-  </RecipeDef>
-  
-  <!-- Surgical hand WIP -->
-
-  <HediffDef ParentName="AddedBodyPartBase">
-    <defName>FieldHand</defName>
-    <label>field hand</label>
-    <labelNoun>a field hand</labelNoun>
-    <description>An installed field hand.</description>
-    <descriptionHyperlinks><ThingDef>FieldHand</ThingDef></descriptionHyperlinks>
-    <addedPartProps>
-      <solid>true</solid>
-    </addedPartProps>
-    <stages>
-      <li>
-        <statOffsets>
-          <PlantWorkSpeed>1.60</PlantWorkSpeed>
-        </statOffsets>
-        <capMods>
-          <li>
-            <capacity>Moving</capacity>
-            <offset>-0.08</offset>
-          </li>
-        </capMods>
-      </li>
-    </stages>
-    <comps>
+	  
       <li Class="HediffCompProperties_VerbGiver">
         <tools>
           <li>
-            <label>knuckle</label>
+            <label>scalpel</label>
             <capacities>
-              <li>Blunt</li>
+              <li>Cut</li>
             </capacities>
             <power>9</power>
             <cooldownTime>2</cooldownTime>
-            <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
-            <soundMeleeHit>MeleeHit_FieldHand</soundMeleeHit>
-            <soundMeleeMiss>MeleeMiss_FieldHand</soundMeleeMiss>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -374,10 +235,10 @@
   </HediffDef>
 
   <ThingDef ParentName="BodyPartProstheticImperialBase">
-    <defName>FieldHand</defName>
-    <label>field hand</label>
-    <description>This mechanical hand replacement is made to speed up the sowing and harvesting tasks of a farmer. Multiple telescoping finger-like protrusions can simultaneously harvest from several points on the same plant, or precisely sow several holes at once. It also has a general-purpose manipulator. It is somewhat ungainly, which slows down movement slightly.</description>
-    <descriptionHyperlinks><RecipeDef>InstallFieldHand</RecipeDef></descriptionHyperlinks>
+    <defName>SurgeonHand</defName>
+    <label>surgeon hand</label>
+    <description>This mechanical hand replacement is made to speed up medical operations. It is somewhat ungainly, which slows down movement slightly.</description>
+    <descriptionHyperlinks><RecipeDef>InstallSurgeonHand</RecipeDef></descriptionHyperlinks>
     <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
     <costList>
       <Steel>60</Steel>
@@ -387,24 +248,24 @@
       <researchPrerequisite>SpecializedLimbs</researchPrerequisite>
     </recipeMaker>
     <techHediffsTags>
-      <li>FieldHand</li>
+      <li>SurgeonHand</li>
     </techHediffsTags>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>InstallFieldHand</defName>
-    <label>install field hand</label>
-    <description>Install a field hand.</description>
+    <defName>InstallSurgeonHand</defName>
+    <label>install surgeon hand</label>
+    <description>Install a surgeon hand.</description>
     <descriptionHyperlinks>
-      <ThingDef>FieldHand</ThingDef>
-      <HediffDef>FieldHand</HediffDef>
+      <ThingDef>SurgeonHand</ThingDef>
+      <HediffDef>SurgeonHand</HediffDef>
     </descriptionHyperlinks>
-    <jobString>Installing field hand.</jobString>
+    <jobString>Installing surgeon hand.</jobString>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>FieldHand</li>
+            <li>SurgeonHand</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -412,13 +273,91 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>FieldHand</li>
+        <li>SurgeonHand</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Hand</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>FieldHand</addsHediff>
+    <addsHediff>SurgeonHand</addsHediff>
   </RecipeDef>
+  
+  <!-- Thermoregulator -->
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Thermoregulator</defName>
+    <label>thermoregulator</label>
+    <labelNoun>a thermoregulator</labelNoun>
+    <description>An installed thermoregulator implant.</description>
+    <descriptionHyperlinks><ThingDef>Thermoregulator</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>Thermoregulator</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <statOffsets>
+          <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+          <ComfyTemperatureMax>10</ComfyTemperatureMax>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicImperialBase">
+    <defName>Thermoregulator</defName>
+    <label>thermoregulator</label>
+    <description>Improves thermoregulating ability of a body.</description>
+    <descriptionHyperlinks><RecipeDef>InstallThermoregulator</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>HealingFactors</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallThermoregulator</defName>
+    <label>install thermoregulator</label>
+    <description>Install a thermoregulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Thermoregulator</ThingDef>
+      <HediffDef>Thermoregulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing thermoregulator.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Thermoregulator</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Thermoregulator</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Torso</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Thermoregulator</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveThermoregulator</defName>
+    <label>remove thermoregulator</label>
+    <description>Remove thermoregulator.</description>
+    <descriptionHyperlinks>
+      <ThingDef>Thermoregulator</ThingDef>
+      <HediffDef>Thermoregulator</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing thermoregulator.</jobString>
+    <removesHediff>Thermoregulator</removesHediff>
+  </RecipeDef>
+  
+  <!-- Aiming subprocessor -->
 
 </Defs>

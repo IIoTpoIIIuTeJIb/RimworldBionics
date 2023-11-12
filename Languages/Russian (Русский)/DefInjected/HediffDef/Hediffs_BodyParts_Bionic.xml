@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- легкое -->
+  <BionicLung.label>бионическое легкое</BionicLung.label>
+  <BionicLung.description>Вживлённое бионическое легкое.</BionicLung.description>
+  <BionicLung.labelNoun>бионическое легкое</BionicLung.labelNoun>
+  
+  <!-- печень -->
+  <BionicLiver.label>бионическая печень</BionicLiver.label>
+  <BionicLiver.description>Вживлённая бионическая печень</BionicLiver.description>
+  <BionicLiver.labelNoun>бионическая печень</BionicLiver.labelNoun>
+  
+  <!-- почка -->
+  <BionicKidney.label>бионическая почка</BionicKidney.label>
+  <BionicKidney.description>Вживлённая бионическая почка</BionicKidney.description>
+  <BionicKidney.labelNoun>бионическая почка</BionicKidney.labelNoun>
+  
+  <!-- рука хирурга -->
+  <SurgeonHand.label>рука хирурга</SurgeonHand.label>
+  <SurgeonHand.description>Вживлённая рука хирурга</SurgeonHand.description>
+  <SurgeonHand.comps.HediffComp_VerbGiver.tools.knuckle.label>кулак</SurgeonHand.comps.HediffComp_VerbGiver.tools.knuckle.label>
+  <SurgeonHand.comps.HediffComp_VerbGiver.tools.scalpel.label>скальпель</SurgeonHand.comps.HediffComp_VerbGiver.tools.scalpel.label>
+  <SurgeonHand.labelNoun>рука хирурга</SurgeonHand.labelNoun>
+  
+  <!-- терморегулятор -->
+  
+</LanguageData>

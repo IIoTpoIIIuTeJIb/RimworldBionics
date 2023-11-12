@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- легкое -->
+  
+  <InstallBionicLung.label>вживить бионическое легкое</InstallBionicLung.label>
+  <InstallBionicLung.description>Вживить бионическое легкое.</InstallBionicLung.description>
+  <InstallBionicLung.jobString>Вживляет бионическое легкое</InstallBionicLung.jobString>
+  
+  <!-- печень -->
+  
+  <InstallBionicLiver.label>вживить бионическую печень</InstallBionicLiver.label>
+  <InstallBionicLiver.description>Вживить бионическую печень.</InstallBionicLiver.description>
+  <InstallBionicLiver.jobString>Вживляет бионическую печень</InstallBionicLiver.jobString>
+  
+  <!-- почка -->
+  
+  <InstallBionicKidney.label>вживить бионическую почку</InstallBionicKidney.label>
+  <InstallBionicKidney.description>Вживить бионическую почку.</InstallBionicKidney.description>
+  <InstallBionicKidney.jobString>Вживляет бионическую почку</InstallBionicKidney.jobString>
+  
+  <!-- рука хирурга -->
+  
+  <InstallSurgeonHand.label>вживить рука хирурга</InstallSurgeonHand.label>
+  <InstallSurgeonHand.description>Вживить рука хирурга.</InstallSurgeonHand.description>
+  <InstallSurgeonHand.jobString>Вживляет рука хирурга</InstallSurgeonHand.jobString>
+  
+  <!-- терморегулятор -->
+  
+</LanguageData>

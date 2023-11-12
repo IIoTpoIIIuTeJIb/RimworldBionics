@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- легкое -->
+  
+  <BionicLung.label>бионическое легкое</BionicLung.label>
+  <BionicLung.description>Продвинутое искусственная легкое. Этот протез превосходит обычное легкое почти по всем характеристикам.</BionicLung.description>
+  
+  <!-- печень -->
+  
+  <BionicLiver.label>бионическая печень</BionicLiver.label>
+  <BionicLiver.description>Продвинутая искусственная печень. Данный протез превосходит обычную печень почти по всем характеристикам.</BionicLiver.description>
+  
+  <!-- почка -->
+  
+  <BionicKidney.label>бионическая почка</BionicKidney.label>
+  <BionicKidney.description>Продвинутая искусственная почка. Данный протез превосходит обычную почку почти по всем характеристикам.</BionicKidney.description>
+  
+  <!-- рука хирурга -->
+  
+  <SurgeonHand.label>рука хирурга</SurgeonHand.label>
+  <!-- EN: This mechanical hand replacement is made to speed up medical operations. It is somewhat ungainly, which slows down movement slightly. -->
+  <SurgeonHand.description>Эта механическая замена руки сделана для ускорения медицинских операций. Слегка громоздкая конструкция несколько затрудняет передвижение пользователя.</SurgeonHand.description>
+  
+  <!-- терморегулятор -->
+  
+</LanguageData>
